@@ -1,0 +1,78 @@
+*{box-sizing: border-box;padding: 0;margin: 0;}
+*::before,*::after{box-sizing: border-box;}
+*::-webkit-scrollbar{
+    display: none;
+}
+ul,ol{list-style: none;}
+
+body > .page{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body > .page > section{
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid black ;
+}
+
+#app1 > .output{
+    background: #f0f0f0;
+}
+
+
+#app2 > .tab-bar{
+    display: flex;
+}
+#app2 .tab-bar > li{
+    border: 1px solid #dddddd;
+    width: 50%;
+}
+#app2 .tab-bar > li.selected{
+    background: rgb(160, 233, 248);
+    color: white;
+}
+#app2 .content-bar > li{
+    display: none;
+}
+#app2 .content-bar > li.active{
+    display: block;
+}
+
+
+
+
+#app3 .square{
+    border: 1px solid black;
+    width: 10vw;
+    height: 10vw;
+    margin-top: 10vw;
+    margin-left: 10vw;
+    transition: transform 1s;
+}
+#app3 .square.active{
+    transform:translateX(15vw);
+    border-radius: 50%;
+}
+#app4 .circle{
+    width: 30vw;
+    height: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 2px solid black;
+  
+}
+#app4 .circle.active{
+    animation: colorChange 2s infinite alternate linear;
+}
+@keyframes colorChange{
+    0%{
+        background: red;
+    }
+    100%{
+        background: green;
+    }
+}
+
+/*# sourceMappingURL=main.55c149ef.css.map */
